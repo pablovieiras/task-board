@@ -1,0 +1,55 @@
+.column {
+  background-color: $color-default-3;
+  color: $color-white;
+  flex: 1;
+  font-size: $default-font-size;
+  min-width: 20rem;
+
+  &:not(:last-child) {
+    margin-right: 2rem;
+  }
+
+  &__header {
+    background-color: $color-default-2;
+    border-top: 2px solid $color-white;
+    border-radius: 3px 3px 0 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 1.5rem;
+
+    &--red {
+      border-top: 2px solid $color-red;
+    }
+
+    &--yellow {
+      border-top: 2px solid $color-yellow;
+    }
+
+    &--green {
+      border-top: 2px solid $color-green;
+    }
+
+    &--purple {
+      border-top: 2px solid $color-purple;
+    }
+  }
+
+  &__icon-sort {
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &--inactive {
+      opacity: 0.2;
+    }
+
+    &:hover {
+      opacity: 0.8;
+      transform: translateY(-2px);
+    }
+  }
+
+  &__content {
+    height: 100%;
+    padding: 1.5rem;
+  }
+}

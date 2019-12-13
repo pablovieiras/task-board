@@ -1,0 +1,58 @@
+.options {
+  color: $color-white;
+  cursor: pointer;
+  display: flex;
+  font-size: $default-font-size;
+
+  &__item {
+    align-items: center;
+    display: flex;
+
+    &:not(:last-child) {
+      margin-right: 5rem;
+    }
+
+    &:hover .options__icon {
+      &--red {
+        background-color: $color-red;
+      }
+
+      &--yellow {
+        background-color: $color-yellow;
+      }
+
+      &--green {
+        background-color: $color-green;
+      }
+
+      &--purple {
+        background-color: $color-purple;
+      }
+    }
+  }
+
+  &__icon {
+    border-radius: 50%;
+    display: inline-block;
+    height: $default-font-size;
+    margin-right: 1rem;
+    transition: all 0.3s;
+    width: $default-font-size;
+
+    &--red {
+      border: 3px solid $color-red;
+    }
+
+    &--yellow {
+      border: 3px solid $color-yellow;
+    }
+
+    &--green {
+      border: 3px solid $color-green;
+    }
+
+    &--purple {
+      border: 3px solid $color-purple;
+    }
+  }
+}
