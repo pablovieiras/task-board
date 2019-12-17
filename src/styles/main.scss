@@ -1,12 +1,17 @@
+@import 'abstracts/mixins';
 @import 'abstracts/variables';
 
 @import 'base/base';
 @import 'base/icons';
 @import 'base/typography';
+@import 'base/utilities';
 
 @import 'components/app';
 @import 'components/board';
+@import 'components/button';
 @import 'components/column';
+@import 'components/input';
+@import 'components/modal';
 @import 'components/navbar';
 @import 'components/options';
 @import 'components/task';

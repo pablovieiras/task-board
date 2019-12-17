@@ -17,6 +17,9 @@
         <Task :list="items" />
       </template>
     </div>
+    <div class="column__footer" title="Add task">
+      <span class="icon-plus"></span>
+    </div>
   </div>
 </template>
 

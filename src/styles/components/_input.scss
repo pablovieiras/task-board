@@ -1,0 +1,39 @@
+.input {
+  color: lighten($color-primary, 15);
+  font-size: 1.6rem;
+  margin: 1.5rem 0;
+  position: relative;
+  padding-top: 1rem;
+  transition: all 0.3s;
+
+  label {
+    font-size: inherit;
+    left: 0;
+    position: absolute;
+    transition: all 0.3s;
+  }
+
+  input,
+  textarea {
+    border: none;
+    border-bottom: 1px solid rgba($color-primary, 0.3);
+    font-family: inherit;
+    font-size: inherit;
+    outline: none;
+    padding-bottom: 2px;
+    transition: all 0.3s;
+    width: 100%;
+
+    &:focus {
+      border-bottom: 1px solid rgba($color-primary, 0.6);
+    }
+
+    &:focus + label,
+    &:not(:placeholder-shown) + label,
+    &:not(:empty) + label {
+      font-size: 1.2rem;
+      margin-top: -1.5rem;
+      opacity: 0.8;
+    }
+  }
+}

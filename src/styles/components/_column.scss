@@ -1,7 +1,9 @@
 .column {
   background-color: $color-default-3;
   color: $color-white;
+  display: flex;
   flex: 1;
+  flex-direction: column;
   font-size: $default-font-size;
   min-width: 20rem;
 
@@ -49,7 +51,22 @@
   }
 
   &__content {
-    height: 100%;
+    flex: 1;
     padding: 1.5rem;
+  }
+
+  &__footer {
+    cursor: pointer;
+    padding: 1rem 0;
+    text-align: center;
+    transition: all 0.4s;
+
+    .icon-plus {
+      opacity: 0.5;
+    }
+
+    &:hover {
+      background-color: $color-default-2;
+    }
   }
 }

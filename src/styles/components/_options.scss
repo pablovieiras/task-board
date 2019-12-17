@@ -43,16 +43,32 @@
       border: 3px solid $color-red;
     }
 
+    &--red-selected {
+      background-color: $color-red;
+    }
+
     &--yellow {
       border: 3px solid $color-yellow;
+    }
+
+    &--yellow-selected {
+      background-color: $color-yellow;
     }
 
     &--green {
       border: 3px solid $color-green;
     }
 
+    &--green-selected {
+      background-color: $color-green;
+    }
+
     &--purple {
       border: 3px solid $color-purple;
+    }
+
+    &--purple-selected {
+      background-color: $color-purple;
     }
   }
 }

@@ -77,6 +77,7 @@ export default {
         name: 'Dashboard',
         description: 'Dashboard version 2.0 with new UI',
         type: 'EPIC',
+        visible: true,
       },
 
       {
@@ -84,12 +85,14 @@ export default {
         name: 'Sing Up Improvement',
         description: 'Add a new field in the sing up form',
         type: 'TASK',
+        visible: true,
       },
       {
         id: 3,
         name: 'Login Screen',
         description: 'Option to recover password is not working',
         type: 'BUG',
+        visible: true,
       },
     ]);
   },

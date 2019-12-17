@@ -7,15 +7,38 @@
     border-radius: 0.3rem;
     color: $color-background;
     cursor: move;
-    padding: 1rem 1.5rem;
+    padding: 1rem 3.5rem 1rem 1.5rem;
+    position: relative;
+    transition: all 0.2s;
 
     p {
       font-size: 1.1rem;
       margin-top: 0.6rem;
     }
 
+    .button--icon {
+      bottom: 50%;
+      position: absolute;
+      opacity: 0;
+      right: -1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: all 0.5s;
+      visibility: hidden;
+    }
+
     &:not(:last-child) {
       margin-bottom: 1.5rem;
+    }
+
+    &:hover {
+      box-shadow: 0 0.1rem 0.8rem rgba($color-white, 0.2);
+
+      .button--icon {
+        opacity: 1;
+        right: 1rem;
+        visibility: visible;
+      }
     }
 
     &--red {
